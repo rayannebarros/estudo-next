@@ -1,5 +1,7 @@
 import Card from "@/components/Card";
 import Topo from "@/components/Topo";
+import { useRouter } from "next/router";
+
 const produtos = [
   {
     id: 0,
@@ -54,6 +56,10 @@ function calcDesc2(v: number, d: number) {
 }
 
 export default function produtosPagina() {
+  const router = useRouter();
+  const { nome, curso } = router.query;
+  console.log(nome);
+  console.log(curso);
   return (
     <div>
       <Topo />
@@ -68,7 +74,10 @@ export default function produtosPagina() {
                 valor={e.valor}
                 desconto={e.desconto}
                 funcao={calcDesc}
-              />
+              >
+                <div>Curso de React Next</div>
+                <div>CBF CURSOS</div>
+              </Card>
             );
           }
         })}

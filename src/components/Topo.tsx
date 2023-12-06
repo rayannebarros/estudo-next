@@ -8,10 +8,18 @@ export default function Topo() {
         <div className="text-3xl">Curso de React Next JS</div>
         <div className="subtituloTopo">Projeto de Estudo</div>
       </div>
-      <nav>
+      <nav className="flex gap-5">
         <Link href={"/"}>Home</Link>
-        <Link href={"/produtos/produtos"}>Produtos</Link>
+        <Link
+          href={{
+            pathname: "/produtos/produtos",
+            query: { nome: "Rayanne", curso: "React Next" },
+          }}
+        >
+          Produtos
+        </Link>
         <Link href={"/teste/teste"}>Teste</Link>
+        <Link href={"/usestate/usestate"}>State</Link>
       </nav>
     </div>
   );
