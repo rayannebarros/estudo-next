@@ -41,5 +41,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 =======
 # estudo-next
-Projetos criados para aprendizado de conceitos utilizando React, NextJS e TypeScript
+Projeto criado para consolidação de conceitos utilizando React, NextJS e TypeScript
 >>>>>>> 2988d9856d71dfe877eb84c905f9d10024f5186e
