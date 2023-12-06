@@ -11,7 +11,7 @@ export default function Topo() {
       <nav>
         <Link href={"/"}>Home</Link>
         <Link href={"/produtos/produtos"}>Produtos</Link>
-        <Link href={"/teste/teste"}>Teste 2</Link>
+        <Link href={"/teste/teste"}>Teste</Link>
       </nav>
     </div>
   );
