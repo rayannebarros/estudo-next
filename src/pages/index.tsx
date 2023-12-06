@@ -16,17 +16,6 @@ export default function Home() {
         <div>TypeScript</div>
         <div style={{ color: "#f00", backgroundColor: "#bbb" }}>React</div>
       </div>
-      {/* <div className="flex justify-center gap-3">
-<Card produto={"Mouse"} valor={49.9} desconto={0} funcao={calcDesc} />
-<Card produto={"Teclado"} valor={69.9} desconto={5} funcao={calcDesc} />
-<Card
-produto={"Monitor"}
-valor={459.9}
-desconto={10}
-funcao={calcDesc2}
-/>
-<Card produto={"CPU"} valor={799.9} desconto={50} funcao={calcDesc2} />
-</div> */}
     </div>
   );
 }
