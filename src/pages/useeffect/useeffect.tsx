@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Topo from "@/components/Topo";
+import Globais from "@/components/Globais";
 
 export default function useeffect() {
   const [cont, setCont] = useState<number>(0);
@@ -7,7 +8,10 @@ export default function useeffect() {
 
   useEffect(() => {
     alert("UseEffeect disparado!");
-  }, [aux]);
+    Globais.canal = "CFBDrone";
+    Globais.curso = "TypeScript";
+    Globais.ano = "2099";
+  }, []);
 
   function add() {
     let a = aux;
@@ -17,13 +21,20 @@ export default function useeffect() {
 
   return (
     <div>
-      <Topo />
-      Teste useEffect
-      <p>{`Valor de cont: ${cont}`}</p>
-      <p>{`Valor de cont: ${cont}`}</p>
-      <button onClick={add} className="btnPadrao">
-        Adicionar 1
-      </button>
+      <div>
+        <Topo />
+        Teste useEffect
+        <p>{`Valor de cont: ${cont}`}</p>
+        <p>{`Valor de cont: ${cont}`}</p>
+        <button onClick={add} className="btnPadrao">
+          Adicionar 1
+        </button>
+      </div>
+      <div>
+        <p>{Globais.canal}</p>
+        <p>{Globais.curso}</p>
+        <p>{Globais.ano}</p>
+      </div>
     </div>
   );
 }
