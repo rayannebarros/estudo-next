@@ -18,11 +18,11 @@ export default function Topo() {
         >
           Produtos
         </Link>
-        <Link href={"/teste/teste"}>Teste</Link>
-        <Link href={"/usestate/usestate"}>State</Link>
-        <Link href={"/inputs/inputs"}>Inputs</Link>
-        <Link href={"/useeffect/useeffect"}>UseEffect</Link>
-        <Link href={"/filtragem/filtragem"}>Filtragem</Link>
+        <Link href={"/teste/Teste"}>Teste</Link>
+        <Link href={"/useState/UseState"}>State</Link>
+        <Link href={"/inputs/Inputs"}>Inputs</Link>
+        <Link href={"/useEffect/UseEffect"}>UseEffect</Link>
+        <Link href={"/filtragem/Filtragem"}>Filtragem</Link>
       </nav>
     </div>
   );

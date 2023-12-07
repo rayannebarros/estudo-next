@@ -55,7 +55,7 @@ function calcDesc2(v: number, d: number) {
   return v - d / 2;
 }
 
-export default function produtosPagina() {
+export default function ProdutosPagina() {
   const router = useRouter();
   const { nome, curso } = router.query;
   console.log(nome);

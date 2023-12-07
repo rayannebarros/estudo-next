@@ -10,7 +10,7 @@ const jcursos = [
   { curso: "TypeScript" },
 ];
 
-export default function inputs() {
+export default function Inputs() {
   const [nome, setNome] = useState<string>("");
   const [curso, setCurso] = useState<string>(cursos[0]);
 
@@ -20,12 +20,20 @@ export default function inputs() {
 
   function fcursos() {
     return cursos.map((c: any) => {
-      return <option value={c}>{c}</option>;
+      return (
+        <option value={c} key={Math.random() * 9999999999999999999999}>
+          {c}
+        </option>
+      );
     });
   }
 
   const ccursos = jcursos.map((c: any) => {
-    return <option value={c.curso}>{c.curso}</option>;
+    return (
+      <option value={c.curso} key={Math.random() * 9999999999999999999999}>
+        {c.curso}
+      </option>
+    );
   });
 
   return (
